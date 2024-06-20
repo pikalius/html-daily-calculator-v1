@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เว็บคำนวณเงินร้านรายวัน</title>
+</head>
+<body>
+  <div>
+    <input type="date">
+  </div>
+  <div>
+   คอม : <input class="com js-com" type="number"><br>
+   เงินสด : <input class="cash js-cash" type="number"><br>
+   จ่าย : <input class="pay js-pay" type="number"><br>
+   โอน : <input class="transfer js-transfer" type="number"><br>
+   เก็บ : <input class="keep js-keep" type="number"><br>
+   รวม : <span id="total"></span>
+  </div>
+  <div>
+    <button onclick="calculateTotal()">คำนวณ</button>
+  </div>
+  <div id="message"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
