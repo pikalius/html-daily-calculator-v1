@@ -4,23 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>เว็บคำนวณเงินร้านรายวัน</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    วันที่ <input type="date">
+  <div class="container">
+    <input type="date" class="date-input">
   </div>
-  <div>
-   คอม : <input class="com js-com" type="number"><br>
-   เงินสด : <input class="cash js-cash" type="number"><br>
-   จ่าย : <input class="pay js-pay" type="number"><br>
-   โอน : <input class="transfer js-transfer" type="number"><br>
-   เก็บ : <input class="keep js-keep" type="number"><br>
-   รวม : <span id="total"></span>
+  <div class="input-container">
+    <div class="input-element">
+      <label for="com">คอม:</label>
+      <input id="com" class="js-com" type="number">
+    </div>
+    <div class="input-element">
+      <label for="cash">เงินสด:</label>
+      <input id="cash" class="js-cash" type="number">
+    </div>
+    <div class="input-element">
+      <label for="pay">จ่าย:</label>
+      <input id="pay" class="js-pay" type="number">
+    </div>
+    <div class="input-element">
+      <label for="transfer">โอน:</label>
+      <input id="transfer" class="js-transfer" type="number">
+    </div>
+    <div class="input-element">
+      <label for="keep">เก็บ:</label>
+      <input id="keep" class="js-keep" type="number">
+    </div>
+    <div class="input-element">
+      รวม: <span id="total"></span>
+    </div>
   </div>
-  <div>
+  <div class="button-container">
     <button onclick="calculateTotal()">คำนวณ</button>
   </div>
-  <div id="message"></div>
+  <div id="message" class="message"></div>
 
   <script src="./script.js"></script>
 </body>
