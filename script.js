@@ -5,7 +5,7 @@ function calculateTotal() {
   const transfer = parseFloat(document.querySelector('.js-transfer').value) || 0;
   const keep = parseFloat(document.querySelector('.js-keep').value) || 0;
 
-  const total = cash + pay + transfer + keep;
+  const total = cash + pay + transfer + keep - 3000;
 
   document.getElementById('total').textContent = total;
 
